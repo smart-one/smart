@@ -1,0 +1,49 @@
+/**
+* ---------------------------------------------------------------------------------------------------------------------------------------
+* Site settings
+* ---------------------------------------------------------------------------------------------------------------------------------------
+*/
+/* Typography */
+$base-font-size: 16px;
+$font: 'Open Sans', sans-serif;
+$font-2: Georgia, serif;
+$font-3: "Calibri", sans-serif;
+
+$baseline: $base-font-size * 1.5;
+
+/* Colors */
+$color-btn: #f1e315;
+$color-btn-hover: #e0bc12;
+$color-btn-text: #795e01;
+
+$color-black: #000;
+$color-text: #282828; //dark black
+$color-light-text: #b8896b;  //med brown
+$color-price-text: #ffbe32; //yell
+$color-accend-map-text: #c83c57; 
+$color-btn-map-text: #fbf0d5; 
+$color-reverse-text: #fff;
+$color-faq-header-text: #db746f;
+$color-faq-text: #b98a6c;
+$color-about-text: #7f7f7f;
+
+$color-1: #fbefd4; //light brown
+$color-2: #ffffff; //bg light
+$color-3: #545454; //dark
+$color-4: #b8896b; //controls brown
+$color-5: #c83c57; //map selection
+$color-6: #f2f2f2; //light grey
+$color-7: #cf546b;
+$color-8: #ffb922; //CTA bottom 
+$color-9: #ffd782; //CTA top
+$color-10: #fff7e4;
+$color-11: #d1445a;
+
+$color-hr: #bbb;
+
+$color-error: red;
+$color-success: green;
+
+/* Positioning */
+$margin-multiplier: 2;
+$general-margin: $baseline * $margin-multiplier;

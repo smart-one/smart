@@ -1,0 +1,306 @@
+/*! Remodal - v0.1.6 - 2014-05-16
+ * https://github.com/VodkaBears/remodal
+ * Copyright (c) 2014 VodkaBears; */
+
+/* ==========================================================================
+   Remodal necessary styles
+   ========================================================================== */
+
+/* Hide scroll bar */
+
+html.remodal_lock, body.remodal_lock {
+    overflow: hidden;
+}
+
+/* Anti FOUC */
+
+.remodal, [data-remodal-id] {
+    visibility: hidden;
+}
+
+/* Overlay necessary styles */
+
+.remodal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+
+    display: none;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    text-align: center;
+}
+
+.remodal-overlay:after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -0.05em;
+
+    content: '';
+}
+
+/* Fix iPad, iPhone glitches */
+
+.remodal-overlay > * {
+    -webkit-transform: translateZ(0px);
+}
+
+/* Modal dialog necessary styles */
+
+.remodal {
+    position: relative;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   Remodal default theme
+   ========================================================================== */
+
+
+/* Background for effects */
+
+.remodal-bg {
+    -webkit-transition: -webkit-filter 0.2s linear;
+    -moz-transition: -moz-filter 0.2s linear;
+    -o-transition: -o-filter 0.2s linear;
+    transition: filter 0.2s linear;
+}
+
+body.remodal_active .remodal-bg {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+/* Overlay default theme styles */
+
+.remodal-overlay {
+    opacity: 0;
+    background: rgba(33, 36, 46, 0.95);
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+body.remodal_active .remodal-overlay {
+    opacity: 1;
+}
+
+/* Modal dialog default theme styles */
+
+.remodal {
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 8px #171a24;
+    box-shadow: 0px 0px 8px #171a24;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    -moz-transition: -moz-transform 0.2s linear;
+    -o-transition: -o-transform 0.2s linear;
+    transition: transform 0.2s linear;
+}
+
+body.remodal_active .remodal {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Modal dialog vertical align  */
+
+.remodal, .remodal-overlay:after {
+    vertical-align: middle;
+}
+
+/* Close button */
+
+.remodal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 28px;
+    height: 28px;
+
+    text-decoration: none;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #3e5368;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+}
+
+.remodal-close:after {
+    display: block;
+
+    font-size: 28px;
+    font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif !important;
+    content: "×";
+    line-height: 24px; /*Changed by egolife due to bootstrap box-sizing specifics*/
+    cursor: pointer;
+    text-decoration: none;
+    color: #3e5368;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.remodal-close:hover, .remodal-close:active {
+    background: #3e5368;
+}
+
+.remodal-close:hover.remodal-close:after, .remodal-close:active.remodal-close:after {
+    color: #f4f4f4;
+}
+
+/* Dialog buttons */
+
+
+
+/* Media queries
+   ========================================================================== */
+
+
+#order_form_container{
+    width: 854px;
+    padding: 45px;
+}
+
+#order_form_container h3{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+#order_form_container .phone_controls{
+    position: relative;
+}
+#order_form_container .label{
+    position: absolute;
+    top: -5px;
+    right: 20px;
+
+    font-weight: 300;
+    font-size: 19px;
+    color: #da9e9e;
+}
+#order_form_container .detailed_link_container{
+    text-align: left;
+    padding-bottom: 35px;
+}
+#order_form_container .detailed{
+    font-size: 15px;
+    color: #caa218;
+    
+    padding-bottom: 3px;
+    border-bottom: 1px dashed #caa218;
+
+}
+#order_form_container .btn{
+    float: left;
+}
+#order_form{
+     width: 60%; 
+     float: left; 
+     padding-right: 55px;
+}
+#order_form .detailed_form{
+    display: none;
+}
+
+#orderSliderContainer{
+    margin-top: 55px;
+    position: relative;
+    width: 300px; 
+    float: right;
+}
+
+#order_slider li{
+    width: 300px;
+    text-align: center;
+}
+
+#orderSliderContainer .controls{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+}
+#orderSliderContainer .i_order_next, #orderSliderContainer .i_order_prev{
+    position: absolute;
+    top: 0;
+}
+#orderSliderContainer .i_order_prev{
+    left: 20px;
+}
+#orderSliderContainer .i_order_next{
+    right: -15px;
+}
+
+#order_slider .credits{
+    margin-top: -50px;
+}
+#order_slider .amount{
+    font-weight: bold;
+    font-size: 15px;
+}
+#order_slider .price{
+    font-weight: 300;
+    font-size: 18px;
+}
+#order_slider .extra{
+    font-weight: 600;
+    font-size: 15px;
+    margin: 5px 0;
+}
+#order_name, #order_email{
+    margin: 0;
+}
+
+
+
+/**
+* ---------------------------------------------------------------------------------------------------------------------------------------
+* This styles should be replaced to other directory
+* ---------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+#topCarousel, #order_slider{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#topCarousel ul.carousel-container, #order_slider ul{
+    width: 20000px;
+    position: relative;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#topCarousel .carousel-container > li, #order_slider li{
+    float: left;
+}
+
