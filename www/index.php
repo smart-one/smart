@@ -630,7 +630,7 @@
 				<div class="phone" style="left: -35px;">
 					<img src="img/header_phone.png" alt="">
 					<a href="#" class="button callback"></a>
-					<div class="footer-email">E-mail: <b>info@smart-one.su</b></div>
+					<div class="footer-email">E-mail: <b>info@smartidea.su</b></div>
 				</div>
 			</div>
 		</footer>
