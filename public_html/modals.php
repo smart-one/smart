@@ -1,6 +1,8 @@
 <!-- Здесь пишем все скрытые блоки на странице
 Подключение происходит из footer.php -->
-
+<!-- 
+	Just test comment
+ -->
 <div class="remodal order_modal innerWrapper row" id="order_form_container" data-remodal-id="order_modal">
 
 	<form action="/" id="order_form" class="text-center">
