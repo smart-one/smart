@@ -60,6 +60,13 @@ html.remodal_lock, body.remodal_lock {
    Remodal default theme
    ========================================================================== */
 
+/* Default theme font */
+
+@import url(http://fonts.googleapis.com/css?family=Exo+2:700,400&subset=latin,cyrillic);
+
+.remodal, .remodal * {
+    font-family: 'Exo 2', sans-serif;
+}
 
 /* Background for effects */
 
@@ -98,10 +105,15 @@ body.remodal_active .remodal-overlay {
 .remodal {
     width: 100%;
     min-height: 100%;
-    background-color: #fff;
+    padding: 35px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    font-size: 16px;
+    background: #f4f4f4;
+    background-clip: padding-box;
+    color: #182a3c;
     -webkit-box-shadow: 0px 0px 8px #171a24;
     box-shadow: 0px 0px 8px #171a24;
     -webkit-transform: scale(0.95);
@@ -133,8 +145,8 @@ body.remodal_active .remodal {
 
 .remodal-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 5px;
+    left: 5px;
 
     width: 28px;
     height: 28px;
@@ -155,7 +167,7 @@ body.remodal_active .remodal {
     font-size: 28px;
     font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif !important;
     content: "×";
-    line-height: 24px; /*Changed by egolife due to bootstrap box-sizing specifics*/
+    line-height: 28px;
     cursor: pointer;
     text-decoration: none;
     color: #3e5368;
@@ -175,132 +187,57 @@ body.remodal_active .remodal {
 
 /* Dialog buttons */
 
+.remodal-confirm, .remodal-cancel {
+    display: inline-block;
+    width: 120px;
+    padding: 9px 0;
+    margin: 0 0 5px 0;
 
+    font-size: 10pt;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-clip: padding-box;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.remodal-confirm {
+    border: 2px solid #16a085;
+    background: #f4f4f4;
+    color: #16a085;
+}
+
+.remodal-confirm:hover, .remodal-confirm:active {
+    background: #16a085;
+    color: #f4f4f4;
+}
+
+.remodal-cancel {
+    border: 2px solid #c0392b;
+    background: #f4f4f4;
+    color: #c0392b;
+}
+
+.remodal-cancel:hover, .remodal-cancel:active {
+    background: #c0392b;
+    color: #f4f4f4;
+}
 
 /* Media queries
    ========================================================================== */
 
+@media only screen and (min-width: 40.063em) /* min-width 641px */ {
+    .remodal {
+        max-width: 700px;
+        margin: 20px auto;
+        min-height: 0;
 
-#order_form_container{
-    width: 854px;
-    padding: 45px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
 }
-
-#order_form_container h3{
-    font-weight: 300;
-    font-size: 25px;
-    margin-bottom: 35px;
-}
-#order_form_container .phone_controls{
-    position: relative;
-}
-#order_form_container .label{
-    position: absolute;
-    top: -5px;
-    right: 20px;
-
-    font-weight: 300;
-    font-size: 19px;
-    color: #da9e9e;
-}
-#order_form_container .detailed_link_container{
-    text-align: left;
-    padding-bottom: 35px;
-}
-#order_form_container .detailed{
-    font-size: 15px;
-    color: #caa218;
-    
-    padding-bottom: 3px;
-    border-bottom: 1px dashed #caa218;
-
-}
-#order_form_container .btn{
-    float: left;
-}
-#order_form{
-     width: 60%; 
-     float: left; 
-     padding-right: 55px;
-}
-#order_form .detailed_form{
-    display: none;
-}
-
-#orderSliderContainer{
-    margin-top: 55px;
-    position: relative;
-    width: 300px; 
-    float: right;
-}
-
-#order_slider li{
-    width: 300px;
-    text-align: center;
-}
-
-#orderSliderContainer .controls{
-    position: absolute;
-    left: 0;
-    top: 40px;
-    width: 100%;
-}
-#orderSliderContainer .i_order_next, #orderSliderContainer .i_order_prev{
-    position: absolute;
-    top: 0;
-}
-#orderSliderContainer .i_order_prev{
-    left: 20px;
-}
-#orderSliderContainer .i_order_next{
-    right: -15px;
-}
-
-#order_slider .credits{
-    margin-top: -50px;
-}
-#order_slider .amount{
-    font-weight: bold;
-    font-size: 15px;
-}
-#order_slider .price{
-    font-weight: 300;
-    font-size: 18px;
-}
-#order_slider .extra{
-    font-weight: 600;
-    font-size: 15px;
-    margin: 5px 0;
-}
-#order_name, #order_email{
-    margin: 0;
-}
-
-
-
-/**
-* ---------------------------------------------------------------------------------------------------------------------------------------
-* This styles should be replaced to other directory
-* ---------------------------------------------------------------------------------------------------------------------------------------
-*/
-
-
-#topCarousel, #order_slider{
-    position: relative;
-    overflow: hidden;
-    
-}
-
-#topCarousel ul.carousel-container, #order_slider ul{
-    width: 20000px;
-    position: relative;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#topCarousel .carousel-container > li, #order_slider li{
-    float: left;
-}
-

@@ -10,7 +10,7 @@ body{
 	background-color: #FAFAF8;
 	font-family: Arial, Helvetica, sans-serif;
 }
-h2{
+.header h2{
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -702,4 +702,56 @@ h2 p::after{
 
 .form10-p b{
 	color: #99ff00;
+}
+
+
+.remodal{
+	width: initial;
+}
+.remodal h2{
+	margin: 0.83em 0;
+	font-size: 30px;
+	font-weight: normal;
+}
+.remodal-close{left: initial; right: 5px;}
+
+.modal-form input{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	height: 40px;
+	margin-bottom: 20px;
+	border-radius: 6px;
+	padding: 0 15px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	font-size: 18px;
+}
+.modal-form [type="submit"]{
+	margin-bottom: 0;
+	height: 50px;
+	border: none;
+	background-color: #589bb5;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+.modal-form [type="submit"]:hover{
+	background-color: #408098;
+}
+
+.reviews-remodal{
+	max-width: 500px;
+}
+.reviews-remodal p{
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 10px;
+}
+.reviews-remodal input{
+	margin-bottom: 10px;
+	width: 90%;
 }

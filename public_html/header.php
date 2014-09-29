@@ -19,6 +19,7 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/jquery.remodal.css">
 	<link rel="stylesheet" href="css/main.css" />
 	
 	<!-- For html5 tags support in old IE -->

@@ -7,7 +7,7 @@
 				<div class="logo"><img src="img/header_logo.png" height="64" width="323" alt=""></div>
 				<div class="phone">
 					<img src="img/header_phone.png" alt="">
-					<a href="#" class="button callback"></a>
+					<a href="#header_modal" class="button callback"></a>
 				</div>
 			</div>
 		</header>
@@ -60,11 +60,11 @@
 		</div>
 
 		<div class="block1_form">
-			<form action="/" method="POST">
-				<input type="text" placeholder="Введите имя*" style="background: #fff url(img/input_name_bg.png) 0 0 no-repeat;">
-				<input type="tel" placeholder="Введите телефон*" style="background: #fff url(img/input_phone_bg.png) 0 0 no-repeat;">
-				<input type="email" placeholder="Введите e-mail" style="background: #fff url(img/input_email_bg.png) 0 0 no-repeat;">
-				<input type="text" placeholder="Введите нишу бизнеса" style="background: #fff url(img/input_biz_bg.png) 0 0 no-repeat;">
+			<form id="offer_form" action="/" method="POST">
+				<input type="text" placeholder="Введите имя*" name="name" required style="background: #fff url(img/input_name_bg.png) 0 0 no-repeat;">
+				<input type="tel" placeholder="Введите телефон*" name="phone" required style="background: #fff url(img/input_phone_bg.png) 0 0 no-repeat;">
+				<input type="email" placeholder="Введите e-mail" name="email" style="background: #fff url(img/input_email_bg.png) 0 0 no-repeat;">
+				<input type="text" placeholder="Введите нишу бизнеса" name="business" style="background: #fff url(img/input_biz_bg.png) 0 0 no-repeat;">
 				<input type="submit" value="">
 			</form>
 		</div>
@@ -160,14 +160,14 @@
 		</h3>
 
 		<div class="form1_wrapper">
-			<form action="/">
+			<form id="account_form" action="/" method="POST">
 				<div class="column2">
-					<input type="text" required placeholder="Имя*">
-					<input type="tel" required placeholder="Телефон*">
-					<input type="email" placeholder="Email">
+					<input type="text" required placeholder="Имя*" name="name" required>
+					<input type="tel" required placeholder="Телефон*" name="phone" required>
+					<input type="email" placeholder="Email" name="email">
 				</div>
 				<div class="column2">
-					<textarea placeholder="Опишите ваш вид бизнеса и нужное количество заявок в месяц."></textarea>
+					<textarea name="extra" placeholder="Опишите ваш вид бизнеса и нужное количество заявок в месяц."></textarea>
 				</div>
 
 				<div class="column1">
@@ -336,9 +336,9 @@
 		</div>
 
 		<form id="spec_offer" action="#" method="POST" style="position: absolute; z-index: 20; top: 4401px; left: 352px;">
-			<input type="text" placeholder="Введите имя*">
-			<input type="tel" placeholder="Введите телефон*">
-			<input type="text" placeholder="Введите вашу нишу">
+			<input type="text" placeholder="Введите имя*" name="name" required>
+			<input type="tel" placeholder="Введите телефон*" name="phone" required>
+			<input type="text" placeholder="Введите вашу нишу" name="business">
 			<input type="submit" value="">
 		</form>
 
@@ -463,7 +463,7 @@
 		</p>
 
 		<div class="form8-button" style="position: absolute; z-index: 20; left: 631px; top: 5141px;">
-			<a href="/" style="display: block; width: 246px; height: 40px; border-radius: 6px; background: url(img/form8_btn_bg.png) 0 0 no-repeat;"></a>
+			<a href="#costs_modal" style="display: block; width: 246px; height: 40px; border-radius: 6px; background: url(img/form8_btn_bg.png) 0 0 no-repeat;"></a>
 		</div>
 
 		<div class="header header9">
@@ -538,7 +538,7 @@
 			<p class="review">
 				Очень доволен результатом, не думал что все может быть так просто, - заказал лиды, загнал предоплату за первые 100 лидов, и через 7 дней получил первый звонок. А еще через несколько дней вышли на расчетное количество звонков в день - больше я просто не успеваю перерабатывать.
 			</p>
-			<a href="/" class="button">Нужны лиды по бурению скважин? -ЖМИ!</a>
+			<a href="#review1_modal" class="button">Нужны лиды по бурению скважин? -ЖМИ!</a>
 		</article>
 
 		<div class="block10_inner2" style="top: 6124px;">
@@ -583,7 +583,7 @@
 			<p class="review">
 				Вначале было тяжело уговорить себя тратить на рекламу 2500 рублей в день, но как только прошла неделя начались звонки и проект окупился за первый месяц работы. Всем рекомендую!
 			</p>
-			<a href="" class="button">Нужны лиды по ремонту квартир? -ЖМИ!</a>
+			<a href="#review3_modal" class="button">Нужны лиды по ремонту квартир? -ЖМИ!</a>
 		</article>
 
 		<div class="form10" style="position: absolute; z-index: 20; left: -480px; top: 6904px;">
@@ -591,10 +591,10 @@
 		</div>
 
 		<form id="spec_offer_bottom" action="#" method="POST" style="position: absolute; z-index: 20; top: 6930px; left: 372px;">
-			<input type="text" placeholder="Введите имя*">
-			<input type="tel" placeholder="Введите телефон*">
-			<input type="text" placeholder="Направление деятельности">
-			<input type="submit" value="">
+			<input type="text" placeholder="Введите имя*" name="name" required>
+			<input type="tel" placeholder="Введите телефон*" name="phone" required>
+			<input type="text" placeholder="Направление деятельности" name="business">
+			<input type="submit" value="" name="submit">
 		</form>
 
 		<div class="form10-p" style="top: 6915px; left: 0; line-height: 1;">
@@ -629,12 +629,13 @@
 				<div class="logo" style="margin-top: 32px; margin-left: 30px;"><img src="img/header_logo.png" height="64" width="323" alt=""></div>
 				<div class="phone" style="left: -35px;">
 					<img src="img/header_phone.png" alt="">
-					<a href="#" class="button callback"></a>
+					<a href="#footer_modal" class="button callback"></a>
 					<div class="footer-email">E-mail: <b>info@smartidea.su</b></div>
 				</div>
 			</div>
 		</footer>
-
+	</div>
+</div>
 
 <?php require("footer.php"); ?>
 

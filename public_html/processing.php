@@ -18,14 +18,13 @@ if(isset($_POST)){
 		else{
 			$extra .= htmlspecialchars($key).": ".htmlspecialchars($value)."\n";
 		}
-		
 	}
 
 	$data .= $extra;
 
 	$mail = "egor.zubarev@gmail.com, alex_19@mail.ru, webdev@sms.ru, alex19@sms.ru";
-	$subject="=?utf-8?B?". base64_encode("Новая заявка с посадочной страницы: Security Feel Better"). "?=";	
-	$date = date("d.m.yг. H:i:s", time() );
+	$subject="=?utf-8?B?". base64_encode("Новая заявка с сайта: Smartidea.su"). "?=";	
+	$data .= date("d.m.yг. H:i:s", time() );
 
 	$headers='';
     $headers.="Mime-Version: 1.0\r\n";
