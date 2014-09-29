@@ -5,6 +5,9 @@
 */
 
 $(document).ready(function(){
+
+	var thx_remodal = $.remodal.lookup[$('[data-remodal-id=thx_modal]').data('remodal')];
+
 	var metrikaGoalList = {   //[form_id] : [metrika_mark]
 		offer_form: "offer",
 		account_form: "account",
@@ -37,6 +40,10 @@ $(document).ready(function(){
 				}
 			}
 			activeForm.find("input, textarea").not("[type=submit]").val("");
+			thx_remodal.open();
+			setTimeout(function(){
+				thx_remodal.close();
+			}, 4000);
 		});
 	});
 });
