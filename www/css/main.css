@@ -83,14 +83,14 @@ img{
 .wrapper{
 	min-width: 960px;
 	overflow-x: hidden;
-	height: 7264px;
+	height: 7283px;
 }
 
 .container{
 	position: relative;
 	width: 960px;
 	margin: 0 auto;
-	height: 7264px;
+	height: 7283px;
 }
 .header{
 	position: absolute;
@@ -112,6 +112,82 @@ img{
 .header9{top: 5200px;} /*Если нужен большой поток*/
 .header10{top: 5583px;} /*отзывы*/
 
+
+.block1_inner{
+	position: absolute;
+	z-index: 20;
+	text-align: center;
+
+}
+
+.block1_inner h1{
+	font-weight: normal;
+	font-size: 31px;
+	font-family: "Trebuchet ms", Helvetica, sans-serif;
+	color: #696969;
+}
+
+.block1_inner b{
+	text-decoration: underline;
+	font-size: 40px;
+	color: #3399ff;
+	font-weight: normal;
+	line-height: 1.2;
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+.p-block1{
+	position: absolute;
+	z-index: 20;
+
+	color: #fff;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.p-block1 strong{
+	color: #0ff;
+}
+
+.block1_form{
+	position: absolute;
+	z-index: 20;
+	top: 489px;
+	left: 668px;
+	width: 262px;
+
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.block1_form input{
+	display: block;
+	height: 27px;
+	width: 178px;
+	border-radius: 0;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	padding: 0 41px;
+
+	font-weight: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+.block1_form input[type="submit"]{
+	width: 262px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	text-decoration: none;
+	background: url("../img/offer_form_button_bg.png") 0 0 no-repeat;
+	margin-top: 20px;
+	border: none;
+}
 
 .p-block3{
 	position: absolute; 
@@ -197,7 +273,37 @@ img{
 	z-index: 20;
 }
 
+.block7{
+	position: absolute;
+	top: 3641px;
+	left: -480px;
+	z-index: 20;
+	background: url("../img/paint_bg.jpg") 0 0 repeat;
+}
 
+.block7_inner{
+	position: absolute;
+	left: 0;
+	top: 111px;
+	z-index: 20;
+}
+
+.p-block7{
+	position: absolute;
+	z-index: 20;
+	font-size: 19px;
+	color: #000;
+	line-height: 1;
+	font-family: arial, helvetica, sans-serif;
+}
+
+.p-block7-left{
+	left: 95px;
+}
+
+.p-block7-right{
+	left: 634px;
+}
 
 .block6_2{
 	position: absolute;
@@ -206,7 +312,27 @@ img{
 	z-index: 20;
 }
 
+#spec_offer input[type="text"], #spec_offer input[type="tel"]{
+	display: block;
+	height: 39px;
+	width: 178px;
+	font-size: 16px;
+	border: 1px solid #bbb;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 12px;
+	padding: 0 17px;
+	border-radius: 5px;
 
+}
+
+#spec_offer input[type="submit"]{
+	display: block;
+	height: 39px;
+	width: 213px;
+
+	background: url(../img/form7_btn_bg.png) 0 0 no-repeat;
+	border: none;
+}
 
 header{
   position: relative;
@@ -221,10 +347,10 @@ footer{
 	z-index: 20;
 	top: 7154px;
 	width: 1920px;
-	height: 110px;
-	background: #fff url(../img/header_bg.png) 0 0 no-repeat;
-	-webkit-background-size: 1920px 110px;
-	background-size: 1920px 110px;
+	height: 129px;
+	background: #fff url(../img/footer_bg.png) 0 0 no-repeat;
+	-webkit-background-size: 1920px 129px;
+	background-size: 1920px 129px;
 }
 
 .layout{
@@ -393,3 +519,187 @@ h2 p::after{
 	font-size: 150%;
 }
 
+.p-form7{
+	position: absolute;
+	z-index: 20;
+	color: #fff;
+	line-height: 1;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+}
+
+.p-form7 strong{
+	color: #99ff00;
+}
+
+.p-form7-right{
+	text-align: left;
+	font-weight: normal;
+}
+
+.block8_inner{
+	position: absolute;
+	z-index: 20;
+}
+
+.block8-p{
+	position: absolute;
+	z-index: 20;
+	font-family: arial, helvetica, sans-serif;
+	line-height: 1;
+	font-size: 18px;
+}
+
+.form8-p{
+	position: absolute;
+	z-index: 20;
+	top: 5155px;
+	left: 20px;
+
+	color: #fff;
+	font-size: 30px;
+	font-family: Helvetica, sans-serif;
+	line-height: 5.2px;
+}
+
+.block9{
+	position: absolute;
+	z-index: 20;
+	background: url("../img/paint_bg.jpg") 0 0 repeat;
+	top: 5300px;
+	left: -480px;
+}
+
+.block9_inner{
+	position: absolute;
+	z-index: 20;
+}
+
+.p-block9{
+	position: absolute;
+	z-index: 20;
+	font-size: 18px;
+	color: #000;
+	line-height: 1;
+	font-family: arial, helvetica, sans-serif;
+}
+.block10_inner{
+	position: absolute;
+	z-index: 20;
+}
+.block10_inner2{
+	position: absolute;
+	z-index: 20;
+	left: -480px;
+	height: 389px;
+	width: 1920px;
+	background: url("../img/paint_bg.jpg") 0 0 repeat;
+}
+
+.article-block10{
+	position: absolute;
+	z-index: 20;
+	width: 502px;
+	font-family: Helvetica, sans-serif;
+}
+
+.article-block10 h3{
+	margin-top: 5px;
+	font-weight: normal;
+	color: #99cc33;
+	font-size: 30px;
+	/*line-height: 5.2px;*/
+}
+.article-block10 .review-phone{
+	margin-top: 5px;
+	font-weight: bold;
+	color: #99cc33;
+	font-size: 16px;
+}
+.article-block10 .business{
+	margin-top: 5px;
+	font-size: 16px;
+	color: #696969;
+}
+.article-block10 .separator{
+	font-size: 12px;
+}
+.article-block10 .stats{
+	margin-top: 4px;
+	font-size: 18px;
+	color: #696969;
+}
+.article-block10 .review{
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.article-block10 .button{
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	width: 490px;
+	height: 41px;
+	line-height: 41px;
+	color: #fff;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+
+	border-radius: 6px;
+	background-color: #2475bd;
+}
+
+.article-block10 .button:hover{
+	background-color: #005cad;
+}
+
+.footer-email{
+	position: absolute;
+	top: 95px;
+	left: 84px;
+	font-size: 18px;
+}
+
+.footer-email b{
+	color: #0033ff;
+}
+
+#spec_offer_bottom input[type="text"], #spec_offer_bottom input[type="tel"]{
+	display: block;
+	height: 39px;
+	width: 204px;
+	font-size: 16px;
+	border: 1px solid #bbb;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 12px;
+	padding: 0 7px;
+	border-radius: 5px;
+
+}
+
+#spec_offer_bottom input[type="submit"]{
+	display: block;
+	height: 39px;
+	width: 214px;
+	margin: 0 auto;
+
+	background: url(../img/form10_btn_bg.png) 0 0 no-repeat;
+	border: none;
+}
+.form10-p{
+	position: absolute;
+	z-index: 20;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+	font-size: 32px;
+}
+
+.form10-p b{
+	color: #99ff00;
+}
