@@ -5,9 +5,6 @@
 */
 
 $(document).ready(function(){
-	$("form").each(function(el){
-		console.log($(this).attr("id"));
-	});
 	var metrikaGoalList = {   //[form_id] : [metrika_mark]
 		offer_form: "offer",
 		account_form: "account",
